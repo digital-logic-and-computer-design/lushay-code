@@ -858,7 +858,7 @@ function main() {
         if (!portPopup.classList.contains('hide')) {
             portPopup.classList.add('hide');
         }
-    })
+    });
     savePortSelection.addEventListener('click', () => {
         const radioGroup = document.getElementById('port-radio-group');
         if (!radioGroup || !radioGroup.value || !constraintsTable.rowsData[editRowIndex]) { return; }
@@ -913,7 +913,7 @@ function main() {
         portContainer.appendChild(radioGroup);
        
         portContainer.classList.remove('hide');
-    }
+    };
 
     showTemplateWindowBtn.addEventListener('click', () => {
         const options = templateContainer.querySelectorAll('vscode-checkbox');
@@ -1186,7 +1186,7 @@ function main() {
         editRowIndex = null;
         updateConstraintsTable();
         updateEditWindow();
-    }
+    };
 
     const loadIceFile = async (rows, edits) => {
         const portMap = {};
@@ -1392,7 +1392,7 @@ function main() {
         }
         edits.forEach((edit) => {
             handleEdit(edit);
-        })
+        });
         updateConstraintsTable();
         updateEditWindow();
     }
@@ -1507,7 +1507,7 @@ function main() {
             convertToEcp5ConstraintsText(constraints, fileRows);
         }
         return fileRows.join('\n');
-    }
+    };
 
     const handleEdit = (edit) => {
         if (edit.editType === 'change') {
@@ -1557,7 +1557,7 @@ function main() {
 				}
 			case 'update':
 				{
-                    await loadFile(body.content, body.edits, body.uri)
+                    await loadFile(body.content, body.edits, body.uri);
 					return;
 				}
             case 'portResponse':
