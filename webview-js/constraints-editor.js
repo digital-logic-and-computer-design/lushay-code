@@ -201,6 +201,11 @@ const TEMPLATES = {
             {name: 'ledB', location: '39'},
             {name: 'ledG', location: '40'},
             {name: 'ledR', location: '41'}
+        ], 
+        'FTDI UART': [
+            {name: 'txd', location: '14'},
+            {name: 'rxd', location: '15'},
+            {name: 'en_Flash_nCS', location: '16'}  // Disable SPI Flash
         ]
     },
 
