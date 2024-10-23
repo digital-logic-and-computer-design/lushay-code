@@ -198,8 +198,8 @@ const TEMPLATES = {
             {name: 'nCS',  location: '16'},
         ],
         'RGB LED': [
-            {name: 'ledB', location: '39'},
-            {name: 'ledG', location: '40'},
+            {name: 'ledB', location: '40'},
+            {name: 'ledG', location: '39'},
             {name: 'ledR', location: '41'}
         ], 
         'FTDI UART': [
